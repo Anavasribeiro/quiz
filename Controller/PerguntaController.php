@@ -36,5 +36,9 @@ class PerguntaController {
     }
     //ta criando a função para chamar o deletar esporte no model
     
+    public function chamarPerguntas($quantidade_pergunta){
+        return $this->perguntaModel ->chamarPerguntas($quantidade_pergunta);
+    }
+
 
 }

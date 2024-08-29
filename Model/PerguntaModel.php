@@ -1,5 +1,6 @@
 <?php
 
+$quantidadepergunta = [2, 4, 6, 8, 10];
 class PerguntaModel{
 
     private $pdo;
@@ -39,5 +40,12 @@ class PerguntaModel{
      $stmt = $this->pdo-> prepare($sql);
      //prepare estapreparando a ação
      $stmt->execute([$id_pergunta]);
+    }
+
+
+    public function chamarPerguntas($quantidade_pergunta){
+        $sql = "SELECT * FROM quiz WHERE tipo = 'pergunta' LIMIT $quantidade_pergunta";
+        $stmt = $this->pdo->query($sql);
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }
