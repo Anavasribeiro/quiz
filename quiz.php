@@ -13,15 +13,17 @@ foreach($chamar as $item){
     echo $item ['texto_pergunta'];
     echo '<br>';
     echo '<br>';
-    echo $item ['opcao_1'];
+    echo '<label> '.'<input type="radio" id="A" name="opcao">' . $item ['opcao_1']. '</label> ';
     echo '<br>';
-    echo $item ['opcao_2'];
+    echo '<label> '.'<input type="radio" id="B" name="opcao">' . $item ['opcao_2'] . '</label> ';
     echo '<br>';
-    echo $item ['opcao_3'];
+    echo '<label> '.'<input type="radio" id="C" name="opcao">' . $item ['opcao_3']. '</label> ';
     echo '<br>';
-    echo $item ['opcao_4'];
+    echo '<label> '.'<input type="radio" id="D" name="opcao">' . $item ['opcao_4']. '</label> ';
     echo '<br>';
-    
+
 }
 
 ?>
+
+
