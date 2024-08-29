@@ -23,8 +23,8 @@
 </body>
 </html>
 <?php
-require_once 'C:/aluno2/xampp/htdocs/olimpiadas-mvc/config.php';
-require_once 'C:/aluno2/xampp/htdocs/olimpiadas-mvc/controller/EsporteController.php';
+require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/config.php';
+require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Controller/PerguntaController.php';
 
 
 if (isset($_POST["tipo"]) &&

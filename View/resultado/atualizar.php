@@ -1,6 +1,6 @@
 <?php 
 require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/config.php';
-require_once 'C:\aluno2\xampp\htdocs\tabela_quiz\Controller\ResultadoController.php';
+require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Controller/ResultadoController.php';
 
 $resultadoController = new ResultadoController($pdo);
 $resultados = $resultadoController->listarResultados();
