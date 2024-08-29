@@ -11,21 +11,21 @@
 <br>
 <?php
 
-require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/config.php';
-require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Controller/JogoController.php';
-require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Controller/PerguntaController.php';
-require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Controller/ResultadoController.php';
+require_once 'C:/aluno2/xampp/htdocs/quiz/config.php';
+require_once 'C:/aluno2/xampp/htdocs/quiz/Controller/JogoController.php';
+require_once 'C:/aluno2/xampp/htdocs/quiz/Controller/PerguntaController.php';
+require_once 'C:/aluno2/xampp/htdocs/quiz/Controller/ResultadoController.php';
 
 //importar os arquivos que iremos utilizar
 
 $perguntaController = new PerguntaController($pdo);
-//$resultadoController = new ResultadoController($pdo);
-//$jogoController = new JogoController($pdo);
+$resultadoController = new ResultadoController($pdo);
+$jogoController = new JogoController($pdo);
 //criamos a váriavel esportes parar usar a função listar esportes
 
 $perguntaController->exibirListaPergunta();
-//$jogoController->exibirListaJogo();
-//$resultadoController->exibirListaResultados();
+$jogoController->exibirListaJogo();
+$resultadoController->exibirListaResultados();
 
 
 

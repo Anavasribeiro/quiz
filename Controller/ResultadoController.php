@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Model/ResultadoModel.php';
+require_once 'C:/aluno2/xampp/htdocs/quiz/Model/ResultadoModel.php';
 
 class ResultadoController {
     private $resultadoModel;
@@ -19,7 +19,7 @@ class ResultadoController {
 
     public function exibirListaResultados(){
         $resultados = $this->resultadoModel->listarResultados();
-        include 'C:/aluno2/xampp/htdocs/tabela_quiz/View/resultado/listar.php';
+        include 'C:/aluno2/xampp/htdocs/quiz/View/resultado/listar.php';
         //estamos retornando os esportes
 
         }

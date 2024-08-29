@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Model/JogoModel.php';
+require_once 'C:/aluno2/xampp/htdocs/quiz/Model/JogoModel.php';
 
 class JogoController {
     private $jogoModel;
@@ -19,7 +19,7 @@ class JogoController {
 
     public function exibirListaJogo(){
         $jogos = $this->jogoModel->listarJogos();
-        include 'C:/aluno2/xampp/htdocs/tabela_quiz/View/jogo/listar.php';
+        include 'C:/aluno2/xampp/htdocs/quiz/View/jogo/listar.php';
         //estamos retornando os esportes
 
         }
