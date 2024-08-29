@@ -1,6 +1,6 @@
 <?php
 
-require_once 'C:\aluno2\xampp\htdocs\quiz\Model\PerguntaModel.php';
+require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/Model/PerguntaModel.php';
 
 class PerguntaController {
     private $perguntaModel;
@@ -19,7 +19,7 @@ class PerguntaController {
 
     public function exibirListaPergunta(){
         $perguntas= $this->perguntaModel->listarPerguntas();
-        include 'C:/aluno2/xampp/htdocs/quiz/View/perguntas/listar.php';
+        include 'C:/aluno2/xampp/htdocs/tabela_quiz/View/perguntas/listar.php';
         //estamos retornando os esportes
 
         }
@@ -36,5 +36,9 @@ class PerguntaController {
     }
     //ta criando a função para chamar o deletar esporte no model
     
+    public function chamarPerguntas($quantidade_pergunta){
+        return $this->perguntaModel ->chamarPerguntas($quantidade_pergunta);
+    }
+
 
 }
