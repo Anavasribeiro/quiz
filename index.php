@@ -7,8 +7,21 @@
     <title>INDEX</title>
 </head>
 <body>
-<h1>LISTAGEM</h1>
 <br>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz </title>
+    <script src="https://kit.fontawesome.com/ebda61e3fa.js" crossorigin="anonymous"></script>
+</head>
+<h1>LISTAGEM</h1>
+
+<body>
 <?php
 
 require_once 'C:/aluno2/xampp/htdocs/quiz/config.php';
@@ -31,6 +44,13 @@ $resultadoController->exibirListaResultados();
 
 
 ?>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
 
 
 </body>
