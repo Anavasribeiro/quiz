@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INDEX</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="estilo.css"></script>
+
 </head>
 <body>
-<h1>LISTAGEM</h1>
-<br>
+<h1>PERGUNTAS</h1>
+
+<body>
 <?php
 
 require_once 'C:/aluno2/xampp/htdocs/tabela_quiz/config.php';
@@ -28,7 +30,15 @@ $perguntaController->exibirListaPergunta();
 //$jogoController->exibirListaJogo();
 //$resultadoController->exibirListaResultados();
 
+
 ?>
+
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
 
 
 </body>
