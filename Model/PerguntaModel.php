@@ -16,7 +16,7 @@ class PerguntaModel{
     }
 
     public function listarPerguntas(){
-        $sql = "SELECT * FROM quiz ";
+        $sql = "SELECT * FROM quiz WHERE tipo = 'pergunta'   ";
         //selecionamos todas as colunas
         $stmt = $this->pdo->query($sql);
         //query = consulta o banco de dados se existe
