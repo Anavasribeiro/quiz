@@ -11,6 +11,7 @@ $chamar = $perguntaController->chamarPerguntas($quantidade_pergunta);
 
 foreach($chamar as $item){
     echo $item ['texto_pergunta'];
+    echo'<form action="pergunta.php" method="POST">';
     echo '<br>';
     echo '<br>';
     echo '<label> '.'<input type="radio" id="A" name="opcao">' . $item ['opcao_1']. '</label> ';

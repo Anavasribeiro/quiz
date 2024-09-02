@@ -14,7 +14,7 @@ body {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 20%, #95d488 46%, #FFCC70 110%);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
